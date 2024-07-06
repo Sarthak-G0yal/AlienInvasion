@@ -24,19 +24,28 @@ class AlienInvasion:
                 if event.type == pygame.QUIT:
                     sys.exit()
                 elif event.type == pygame.KEYDOWN:
-                     if event.key == pygame.K_RIGHT:
-                        #   Move the ship to right.
-                        self.ship.moving_right = True
-                     elif event.key == pygame.K_LEFT:
-                        #   Move the ship to left.
-                        self.ship.moving_left = True
+                    self._check_keydown_event(event)
                 elif event.type == pygame.KEYUP:
-                     if event.key == pygame.K_RIGHT:
-                        #   Move the ship moving to right.
-                        self.ship.moving_right = False
-                     elif event.key == pygame.K_LEFT:
-                        #   Stop the ship moving to left.
-                        self.ship.moving_left = False
+                    self._check_keyup_event(event)
+                     
+
+    def _check_keydown_event(self,event):
+        #Respond to key presses.
+        if event.key == pygame.K_RIGHT:
+            #   Move the ship to right.
+            self.ship.moving_right = True
+        elif event.key == pygame.K_LEFT:
+            #   Move the ship to left.
+            self.ship.moving_left = True
+
+    def _check_keyup_event(self,event):
+        #Respond to key presses.
+        if event.key == pygame.K_RIGHT:
+            #   Move the ship moving to right.
+            self.ship.moving_right = False
+        elif event.key == pygame.K_LEFT:
+            #   Stop the ship moving to left.
+            self.ship.moving_left = False
 
     def _update_screen(self):
          # Redraw the screen during each pass through the loop
