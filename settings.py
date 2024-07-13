@@ -2,7 +2,7 @@ class Settings:
     # A class to store all setting for game
 
     def __init__(self):
-        # Initialize the game's Setting.
+        """Initialize the game's static settings."""
 
         # Screen Setting
         self.screen_width = 1200
@@ -26,3 +26,23 @@ class Settings:
         
         #fleet_direction of 1 repesent right; -1 represent left.
         self.fleet_direction = 1
+
+        # How quickly the game speeds up.
+        self.speedup_scale = 1.1
+
+        self.initialize_dynamic_settings()
+
+    def initialize_dynamic_settings(self):
+        """Initialize setting that change throughout the game."""
+        self.ship_speed = 1.5
+        self.bullet_speed = 3.0
+        self.alien_speed = 1.0
+
+        # fleet_direction of 1 represent right ; -1 represent left.
+        self.fleet_direction = 1
+
+    def increase_speed(self):
+        """Increase speed setting."""
+        self.ship_speed *= self.speedup_scale
+        self.bullet_speed *= self.speedup_scale
+        self.alien_speed *= self.speedup_scale
