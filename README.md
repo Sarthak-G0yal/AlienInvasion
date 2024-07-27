@@ -1,30 +1,116 @@
-# ALIEN INVASION GAME
+# Alien Invasion Game
 
-<br>
+## Overview
+Alien Invasion is a classic retro 🕹️ game that we all have played as children, and some might still be enjoying it. Players control a spaceship that must defend the Earth by shooting down waves of alien invaders.
 
-## ***RUNNNNN🏃🏻‍♂️!!!** Aliens👾 are invading our planet....**FEAR NOT** we will stop them using our Battle Ship🚀....*
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Getting Started With Game](#getting-started-with-game)
+    * [Prerequisites](#prerequisites)
+    * [Installation](#installation)
+    * [Virtual Environment Setup](#virtual-environment-setup)
+    * [Running the Game](#running-the-game)
+- [Button Mapping](#button-mapping)
+- [Code Structure](#code-structure)
+- [Development Journey](#development-journey)
+- [Contributing](#contributing)
+- [License](#license)
 
-<br>
+## Features
+- **Player Control**: Move the spaceship left, right, and shoot bullets.
+- **Increasing Difficulty**: Game speeds ups to increase the difficulty.
+- **Scoring System**: Points awarded for shooting down aliens.
+- **Game Over**: The game ends if an alien reaches the bottom of the screen or collides with the spaceship.
 
-This is a Classic Retro🕹️ game that we all have played as a child or some might even be enjoying it right now.
+## Getting Started With Game
 
-I build this game as my first big project using **Python** and its **Pygame** Module.
+1. ### Prerequisites
+- Python 3.12.2
+- Pygame library
 
-It was a fun project which helped me learn a lot about the flow of development, Code Management, Refactoring, importance of discriptive names and many other things.
+2. ### Installation
+    1. Clone the repository:
+       ```bash
+       git clone https://github.com/Sarthak-G0yal/Alien-Invasion-Game.git
+       ```
+    2. Navigate to the project directory:
+       ```bash
+       cd alien-invasion
+       ```
 
-I have used [**Python Crash Course By Eric Matthes 2<sup>nd</sup> Edition** ](https://ehmatthes.github.io/pcc/) as my guide. Its is a very good book to learn python from, as it focuses more on implemention rather then just the theory. It has many interesting project based chapter that are 
-fun to do and teach us many concepts.
+3. ### Virtual Environment Setup
 
----
-### Button-Mapping
+    To create and activate a virtual environment for this project, follow these steps:
 
-| Function  | Button |
-| :------------- | :-------------: |
-| Move Right  | Right Arrow  |
-| Move Left  | Left Arrow  |
-| Shoot  | SpaceBar  |
-| Exit  | Q |
+    1. **Install `virtualenv` (if not already installed):**
+       ```bash
+       pip install virtualenv
+       ```
 
----
+    2. **Navigate to the project directory:**
+       ```bash
+       cd path/to/your/alien-invasion
+       ```
 
-NOTE : RUN **alien_invasion.py** TO PLAY THE GAME.
+    3. **Create a virtual environment:**
+       ```bash
+       virtualenv venv
+       ```
+
+    4. **Activate the virtual environment:**
+       - On **Windows**:
+         ```bash
+         .\venv\Scripts\activate
+         ```
+       - On **macOS/Linux**:
+         ```bash
+         source venv/bin/activate
+         ```
+
+    5. **Install dependencies:**
+       ```bash
+       pip install pygame
+       ```
+
+    6. **Run the game:**
+       ```bash
+       python alien_invasion.py
+       ```
+
+4. ### Running the Game
+    Run the following command to start the game:
+    ```bash
+    python alien_invasion.py
+    ```
+
+## Button Mapping
+|Function|Button|
+|----|----|
+|Move Left|Left Arrow|
+|Move Right|Right Arrow|
+|Shoot|SpaceBar|
+|Exit|Q|
+
+## Code Structure
+- `alien_invasion.py`: The main game file that initializes the game and contains the game loop.
+- `settings.py`: Configuration file for game settings such as screen dimensions and colors.
+- `ship.py`: Class for managing the player's spaceship.
+- `bullet.py`: Class for managing bullets fired by the spaceship.
+- `alien.py`: Class for managing the alien invaders.
+- `game_stats.py`: Class for tracking game statistics.
+- `scoreboard.py`: Class for displaying the score.
+
+## Development Journey
+This is a Classic Retro🕹️ game that we all have played as a child or some might even be enjoying it right now. I built this game as my first big project using **Python** and its **Pygame** Module. 
+
+It was a fun project which helped me learn a lot about the flow of development, code management, refactoring, the importance of descriptive names, and many other things. 
+
+I have used [**Python Crash Course By Eric Matthes 2<sup>nd</sup> Edition**](https://ehmatthes.github.io/pcc/) as my guide. It is a very good book to learn Python from, as it focuses more on implementation rather than just the theory. It has many interesting project-based chapters that are fun to do and teach us many concepts.
+
+## Contributing
+Contributions are welcome! If you have suggestions or improvements, please open an issue or submit a pull request.
+
+## License
+This project is licensed under the GPL-V3 License - see the [LICENSE](#license) file for details.
