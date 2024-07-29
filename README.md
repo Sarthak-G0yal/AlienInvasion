@@ -40,49 +40,10 @@ Alien Invasion is a classic retro 🕹️ game that we all have played as childr
        cd alien-invasion
        ```
 
-3. ### Virtual Environment Setup
-
-    To create and activate a virtual environment for this project, follow these steps:
-
-    1. **Install `virtualenv` (if not already installed):**
-       ```bash
-       pip install virtualenv
-       ```
-
-    2. **Navigate to the project directory:**
-       ```bash
-       cd path/to/your/alien-invasion
-       ```
-
-    3. **Create a virtual environment:**
-       ```bash
-       virtualenv venv
-       ```
-
-    4. **Activate the virtual environment:**
-       - On **Windows**:
-         ```bash
-         .\venv\Scripts\activate
-         ```
-       - On **macOS/Linux**:
-         ```bash
-         source venv/bin/activate
-         ```
-
-    5. **Install dependencies:**
-       ```bash
-       pip install pygame
-       ```
-
-    6. **Run the game:**
-       ```bash
-       python alien_invasion.py
-       ```
-
-4. ### Running the Game
+3. ### Running the Game
     Run the following command to start the game:
     ```bash
-    python alien_invasion.py
+    start alien_invasion.exe
     ```
 
 ## Button Mapping
