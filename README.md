@@ -9,8 +9,6 @@ Alien Invasion is a classic retro 🕹️ game that we all have played as childr
 - [Prerequisites](#prerequisites)
 - [Getting Started With Game](#getting-started-with-game)
     * [Prerequisites](#prerequisites)
-    * [Installation](#installation)
-    * [Virtual Environment Setup](#virtual-environment-setup)
     * [Running the Game](#running-the-game)
 - [Button Mapping](#button-mapping)
 - [Code Structure](#code-structure)
